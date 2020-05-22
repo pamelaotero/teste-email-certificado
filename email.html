@@ -2,10 +2,11 @@
 <html>
     <head>
         <title>Envio de Certificado</title>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width", initial-scale=1>
 
         <style>
-
             .capa{
                 background-image: url('https://hfsgjl.stripocdn.email/content/guids/CABINET_5d55556fee0b4008183ad75d27ea9324/images/93481590102890347.png');
                 background-size: cover;
@@ -15,10 +16,12 @@
 
             /* titulo de boas vindas ola tudo bem*/
             .capa h2{
+                font-family: 'Open Sans', sans-serif;
                 margin: 0px; 
-                padding: 0px 70px 0px 70px;
-                color: white;
-                font-family: sans-serif; 
+                width: 400px;
+                /* padding: 0px 70px 0px 70px; */
+                color: rgb(255, 255, 255);
+                /* font-family: sans-serif;  */
                 font-size: 24px;
                 /* border: 2px solid pink; */
             }
@@ -26,14 +29,10 @@
             .container-nome{
                 display: inline-block;
             }
-            /* .container-logo-xp{
-                display: inline-block;
-                background-image: url('img/logo-xp.png');
-            } */
 
             .corpo-email{
                 /* border: 2px solid red; */
-                padding: 30px 20px;
+                padding: 30px 41px;
                 line-height: 1.5rem;
                 font-family: sans-serif;
                 font-size: 17px;
@@ -41,6 +40,7 @@
 
             .paragrafo-email{
                 text-align: justify;
+                font-family: 'Open Sans', sans-serif; /*estilo da font*/
             }
 
             /*mensagem central de despedida*/
@@ -48,7 +48,7 @@
                 margin: 0px;
                 font-weight: bold;
                 font-size: 20px;
-                font-family: sans-serif;
+                font-family: 'Open Sans', sans-serif;
                 padding-top: 5px;
                 padding-bottom: 50px;
                 padding-left: 20px;
@@ -69,16 +69,17 @@
             }
             .footer p{
                 font-family: sans-serif;
+                /* border: 2px solid red; */
+                font-size: 11px;
             }
 
-            /* .footer .icons-social{
-                width: 40px;
-                height: 40px;
-            } */
+            .footer .icons-social {
+                width: 75%;
+            }
 
             .espaco-icons-social{
                 display: inline-block;
-                max-width:10px;
+                max-width: 16px;
                 width: 100%;
             }
 
@@ -87,15 +88,37 @@
                 height: 69.86px;
             }
 
+            .logo-xp-rodape{
+                display: none;
+            }
+
+            .link:hover{
+                cursor: pointer;
+            }
+
             /* MEDIA QUERIES RESPONSIVE*/
 
             @media (min-width: 0px) and (max-width: 375px) {
-                /* .capa img{
-                    border: 2px solid red;  
-                    /* max-width: 320px;  
-                } */
+                .capa{
+                    padding: 10px 0px;
+                }
                 .capa h2{
-                    font-size: 18px;
+                    font-size: 13px;
+                    width: auto;
+                    padding-left: 22px;
+                    padding-right: 30px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                }
+                .medalha{
+                    width: 32.09px;
+                    height: 39.08px;
+                }
+                .logo-xp{
+                    width: 61px;
+                    height: 58.48px;
+                    display: none;
+                    margin-right: 0em;
                 }
                 .footer{
                     font-size: 10px;
@@ -115,34 +138,56 @@
                     /* border: 2px solid pink; */
                 }
                 .despedidas h1{  
-                    font-size: 14px;
-                    padding-bottom: 30px;
+                    font-size: 13px;
+                    padding-bottom: 10px;
                 }
 
                 .corpo-email{
-                    padding: 20px 20px;
+                    padding: 20px 20px 9px 20px;
                 }
 
                 .paragrafo-email{
                     font-size: 13px;
                     text-align: justify;
                 }
+                .logo-xp-rodape{
+                    display: inline;
+                    padding-bottom: 25px;
+                }
                 
             }
 
             @media (min-width: 376px)  and (max-width: 599px){
+
+                .capa{
+                    /* border: 2px solid red; */
+                    padding: 15px 0px;
+                }
+
                 .capa h2{
-                    font-size: 20px;
+                    font-size: 17px;
+                    width: auto;
+                    padding-left: 11px;
+                    padding-right: 0px;
                 }
                 .footer{
+                    font-size: 10px;
                     padding: 20px 2px 2px 2px;
                 }
-
-                /* .footer .icons-social{
-                    width: 50%;
-                    border: 2px solid red; 
-                } */
-
+                .footer .icons-social {
+                    width: 60%;
+                }
+                .logo-xp{
+                    width: 63.69px;
+                    height: 60.88px;
+                    margin-right: 0em;
+                    margin-top: 0em;
+                    display: none;
+                }
+                .medalha{
+                    width: 32.09px;
+                    height: 38.08px;
+                }
                 .paragrafo-email{
                     font-size: 15px;
                     text-align: justify;
@@ -153,14 +198,23 @@
                 }
 
                 .despedidas h1{  
-                    font-size: 15px;
-                    padding-bottom: 30px;
+                    font-size: 14px;
+                    padding-bottom: 10px;
                 }
                 .contato-bemol h1{
                     font-size: 15px;
                     /* border: 2px solid pink; */
                 }
+                .logo-xp-rodape{
+                    display: inline;
+                    padding-bottom: 25px;
+                }
+            }
 
+            @media (min-width: 599px)  and (max-width: 1024px){
+                .logo-xp-rodape{
+                    display: none;
+                }
             }
 
 
@@ -173,10 +227,9 @@
 
         <table border="0" cellpadding="0"
         cellspacing="0" style="max-width: 700px; width:100%;" align="center" valign = "middle" class="capa">
-
-            <tr align="center" valign="middle" class="container-nome">
+            <tr valign="middle" class="container-nome">
                 <td style="display: inline-block;">
-                    <img src="../img/medalha.png" class="medalha">
+                    <img src="https://s3-sa-east-1.amazonaws.com/msging.net/iris/Media_14a87f7d-e26a-48f3-be0f-9b0b241c21b3" class="medalha">
                 </td>
                 
                 <td style="display: inline-block;">
@@ -184,10 +237,9 @@
                 </td>    
             
                 <td style="display: inline-block;">
-                    <img src="../img/logo-xp.png">
+                    <img src="https://s3-sa-east-1.amazonaws.com/msging.net/iris/Media_30f9849a-e629-4282-83aa-d69f0b4fc1c3" class="logo-xp">
                 </td>
-            </tr>
-
+            </tr>          
         </table>
 
          <!--*************************INÍCIO DO CORPO DO E-MAIL****************************-->
@@ -197,7 +249,7 @@
                 <td class="corpo-email">
                     <p class="paragrafo-email">
                         Agradecemos sua participação e empenho no workshop de <strong>Curso de Análise e Manipulação de dados</strong>, que ocorreu do dia <strong>12/03/2020</strong>. <br><br>Esperamos que tenha gostado do conteúdo e das atividades, ficamos muito felizes em poder compartilhar esse conhecimento com você. 
-                        <br><br>Parabéns pela entrega desafio final, estamos encaminhando o seu certificado. 😉 
+                        <br><br>Parabéns pela entrega desafio final, estamos encaminhando o seu certificado.
                     </p>
                 </td>    
             </tr>
@@ -209,7 +261,14 @@
             <tr align="center" valign="middle" class="despedidas">
                 <td>
                     <h1>Um abraço do time XP Lab e até o próximo! 👋 </h1>
-                </td>    
+                </td>   
+            </tr>
+
+            <tr align="center" valign="middle" class="despedidas">
+                <td>
+                    <img src="../img/logo-xp-rodape.png" class="logo-xp-rodape" style="width: 60.8px;
+                    height: 57.83px;">
+                </td>
             </tr>
         </table>
     
@@ -223,7 +282,9 @@
 
             <tr valign="middle" align="center">
                 <td style="display: inline-block;" align="center">
-                    <img src="../img/facebook_bemol.png" class="icons-social">
+                    <a target="_blank" href="https://www.bemol.com.br/" class= "link">
+                        <img src="https://s3-sa-east-1.amazonaws.com/msging.net/iris/Media_a70be9ad-1427-4062-8830-8c629f93f778" class="icons-social">
+                    </a>
                     <p>facebook</p>
                 </td>
 
@@ -232,7 +293,7 @@
                 </td>  <!--controla o espaçamento entre as imagenss-->
 
                 <td style="display: inline-block;" align="center">
-                        <img src="../img/twitter_bemol.png" class="icons-social">
+                        <img src="https://s3-sa-east-1.amazonaws.com/msging.net/iris/Media_d3dad409-b300-4000-b441-b59e1e561d7d" class="icons-social">
                         <p>twitter</p>
                 </td>
 
@@ -241,7 +302,7 @@
                 </td> <!--controla o espaçamento entre as imagenss-->
 
                 <td style="display: inline-block;" align="center">
-                        <img src="../img/instagram_bemol.png" class="icons-social" >
+                        <img src="https://s3-sa-east-1.amazonaws.com/msging.net/iris/Media_5ee96079-dc4d-476d-883b-b5d992ea198c" class="icons-social" >
                         <p>instagram</p>
                 </td>
 
@@ -250,16 +311,16 @@
                 </td> <!--controla o espaçamento entre as imagens-->
 
                 <td style="display: inline-block;" align="center">
-                        <img src="../img/linkedin_bemol.png" class="icons-social" >
+                        <img src="https://s3-sa-east-1.amazonaws.com/msging.net/iris/Media_29da5cd1-5e37-45ab-aab3-c8e88bc6e712" class="icons-social" >
                         <p>linkedin</p>
                 </td>
 
                 <td class="espaco-icons-social">
                     &nbsp;
-                </td  <!--controla o espaçamento entre as imagenss-->
+                </td>  <!--controla o espaçamento entre as imagenss-->
 
                 <td style="display: inline-block;" align="center">
-                        <img src="../img/youtube_bemol.png" class="icons-social" >
+                        <img src="https://s3-sa-east-1.amazonaws.com/msging.net/iris/Media_9c4a0d14-a557-433b-b273-443d45790d6e" class="icons-social">
                         <p>youtube</p>
                 </td>
             </tr>
@@ -271,7 +332,7 @@
         cellspacing="0" style="max-width: 700px; width:100%;" align="center" bgcolor="#ffffff" class="contato-bemol">
             <tr align="center" valign="middle">
                 <td>
-                    <h1>Central de Atendimento Bemol <br> 0800 726 8300👋 </h1>
+                    <h1 style="font-family: 'Open Sans', sans-serif;">Central de Atendimento Bemol <br> 0800 726 8300👋 </h1>
                 </td>    
             </tr>
         </table>
