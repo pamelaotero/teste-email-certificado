@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!--https://s3-sa-east-1.amazonaws.com/msging.net/iris/Media_32e8c161-9eff-46ed-bcfc-3a7c5025d566-->
 <html>
     <head>
         <title>Envio de Certificado</title>
@@ -8,11 +7,14 @@
         <style>
 
             .capa{
-                /* background-color: #fde148;  */
+                /*background-color: #fde148;*/
                 background-image: url('https://hfsgjl.stripocdn.email/content/guids/CABINET_5d55556fee0b4008183ad75d27ea9324/images/93481590102890347.png');
                 background-size: cover;
+                /* width: auto;
+                height: auto; */
                 background-position: center;
-                padding: 15px;
+                /* padding: 15px; */
+                padding: 30px 20px;
             }
 
             /* titulo de boas vindas ola tudo bem*/
@@ -21,7 +23,6 @@
                 color: white;
                 font-family: sans-serif; 
                 font-size: 24px;
-                padding: 30px 20px;
                 /* border: 2px solid pink; */
             }
 
@@ -31,6 +32,10 @@
                 line-height: 1.5rem;
                 font-family: sans-serif;
                 font-size: 17px;
+            }
+
+            .paragrafo-email{
+                text-align: justify;
             }
 
             /*mensagem central de despedida*/
@@ -47,25 +52,96 @@
             }
 
             /*corda da bemol padrao*/
-
             .cordinha{
                 padding-top: 8px;
-                /* background-image: url('img/cordinha.png'); */
                 background-image: url('https://s3-sa-east-1.amazonaws.com/msging.net/iris/Media_338410e6-83f8-4263-9638-7f5732f2da0e');
                 background-repeat: no-repeat;
             }
 
-            /* INSERIR CSS DO FOOTER AQUI*/
             .footer{
-                padding: 50px 10px;
-                border: 2px solid rgb(0, 110, 255);
+                padding: 20px 2px;
+                /* border: 2px solid rgb(0, 110, 255); */
+            }
+            .footer p{
+                font-family: sans-serif;
             }
 
-            .contato-bemol{
-                padding: 30px 5px;
-                border: 2px solid rgb(2, 81, 251);
+            .footer .icons-social{
+                width: 40px;
+                height: 40px;
             }
-        
+
+            /* MEDIA QUERIES RESPONSIVE*/
+
+            @media (min-width: 0px) and (max-width: 375px) {
+                .capa img{
+                    border: 2px solid red;  
+                    /* max-width: 320px;  */
+                }
+                .capa h2{
+                    font-size: 18px;
+                }
+                .footer{
+                    font-size: 10px;
+                    padding: 20px 2px 2px 2px;
+                    /* border: 2px solid red; */
+                }
+                .footer .icons-social{
+                    width: 25px;
+                    height: 25px;
+                }
+                .contato-bemol h1{
+                    font-size: 14px;
+                    /* border: 2px solid pink; */
+                }
+                .despedidas h1{  
+                    font-size: 14px;
+                    padding-bottom: 30px;
+                }
+
+                .corpo-email{
+                    padding: 20px 20px;
+                }
+
+                .paragrafo-email{
+                    font-size: 13px;
+                    text-align: justify;
+                }
+                
+            }
+
+            @media (min-width: 376px)  and (max-width: 599px){
+                .capa h2{
+                    font-size: 20px;
+                }
+                .footer{
+                    padding: 20px 2px 2px 2px;
+                }
+                .paragrafo-email{
+                    font-size: 15px;
+                    text-align: justify;
+                }
+                .footer .icons-social{
+                    width: 30px;
+                    height: 30px;
+                }
+                .corpo-email{
+                    padding: 20px 30px;
+                }
+
+                .despedidas h1{  
+                    font-size: 15px;
+                    padding-bottom: 30px;
+                }
+                .contato-bemol h1{
+                    font-size: 15px;
+                    /* border: 2px solid pink; */
+                }
+
+
+            }
+
+
         </style>
 
 
@@ -83,57 +159,91 @@
             </tr>
         </table>
 
+         <!--*************************INÍCIO DO CORPO DO E-MAIL****************************-->
         <table border="0" cellpadding="0"cellspacing="0" style="max-width: 700px; width:100%;" align="center" bgcolor="#ffffff">
 
             <tr align="left" valign="middle">
                 <td class="corpo-email">
                     <p class="paragrafo-email">
-                        Agradecemos sua participação e empenho no workshop de <strong>Curso de Análise e Manipulação de dados </strong>, que ocorreu do dia <strong>12/03/2020</strong>. Esperamos que tenha gostado do conteúdo e das atividades, ficamos muito felizes em poder compartilhar esse conhecimento com você. 
-                        Parabéns pela entrega desafio final, estamos encaminhando o seu certificado. 😉 
+                        Agradecemos sua participação e empenho no workshop de <strong>Curso de Análise e Manipulação de dados</strong>, que ocorreu do dia <strong>12/03/2020</strong>. <br><br>Esperamos que tenha gostado do conteúdo e das atividades, ficamos muito felizes em poder compartilhar esse conhecimento com você. 
+                        <br><br>Parabéns pela entrega desafio final, estamos encaminhando o seu certificado. 😉 
                     </p>
                 </td>    
             </tr>
         </table>
 
-
         <table border="0" cellpadding="0"
         cellspacing="0" style="max-width: 700px; width:100%;" align="center" bgcolor="#ffffff">
 
-            <tr align="center" valign="middle">
+            <tr align="center" valign="middle" class="despedidas">
                 <td>
                     <h1>Um abraço do time XP Lab e até o próximo! 👋 </h1>
                 </td>    
             </tr>
         </table>
     
-        <!--cordinha-->
+        <!--****************************CORDINHA BEMOL**********************************-->
         <table border="0" cellpadding="0" cellspacing="0" style="max-width: 700px; width:100%;" align="center" class="cordinha"></table>
         
 
-        <!-- inicio do footer-->
+        <!--*************************FOOTER REDES SOCIAIS ****************************-->
         <table border="0" cellpadding="0"
         cellspacing="0" style="max-width: 700px; width:100%;" align="center" bgcolor="#ffffff" class="footer">
 
-            <tr align="center" valign="middle">
-                <td>
-                    <h1>footer aqui </h1>
-                </td>    
+            <tr valign="middle" align="center">
+                <td style="display: inline-block;" align="center">
+                    <img src="../img/facebook.png" class="icons-social">
+                    <p>facebook</p>
+                </td>
+
+                <td style="display: inline-block; max-width:10px; width: 100%;">
+                        &nbsp;
+                </td> <!--controla o espaçamento entre as imagenss-->
+
+                <td style="display: inline-block;" align="center">
+                        <img src="../img/facebook.png" class="icons-social" >
+                        <p>twitter</p>
+                </td>
+
+                <td style="display: inline-block; max-width:10px; width: 100%;">
+                    &nbsp;
+                </td> <!--controla o espaçamento entre as imagenss-->
+
+                <td style="display: inline-block;" align="center">
+                        <img src="../img/facebook.png" class="icons-social" >
+                        <p>instagram</p>
+                </td>
+
+                <td style="display: inline-block; max-width:10px; width: 100%;">
+                    &nbsp;
+                </td> <!--controla o espaçamento entre as imagens-->
+
+                <td style="display: inline-block;" align="center">
+                        <img src="../img/facebook.png" class="icons-social" >
+                        <p>linkedin</p>
+                </td>
+
+                <td style="display: inline-block; max-width:10px; width: 100%;">
+                    &nbsp;
+                </td> <!--controla o espaçamento entre as imagenss-->
+
+                <td style="display: inline-block;" align="center">
+                        <img src="../img/facebook.png" class="icons-social" >
+                        <p>youtube</p>
+                </td>
             </tr>
         </table>
     
-        <!--entre em contato-->
+        <!--********************** ENTRE EM CONTATO COM A BEMOL *******************-->
 
         <table border="0" cellpadding="0"
         cellspacing="0" style="max-width: 700px; width:100%;" align="center" bgcolor="#ffffff" class="contato-bemol">
-
             <tr align="center" valign="middle">
                 <td>
                     <h1>Central de Atendimento Bemol <br> 0800 726 8300👋 </h1>
                 </td>    
             </tr>
         </table>
-
-        
 
     </body>
 </html>
