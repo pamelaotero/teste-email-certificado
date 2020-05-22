@@ -7,24 +7,29 @@
         <style>
 
             .capa{
-                /*background-color: #fde148;*/
                 background-image: url('https://hfsgjl.stripocdn.email/content/guids/CABINET_5d55556fee0b4008183ad75d27ea9324/images/93481590102890347.png');
                 background-size: cover;
-                /* width: auto;
-                height: auto; */
                 background-position: center;
-                /* padding: 15px; */
-                padding: 30px 20px;
+                text-align: center;
             }
 
             /* titulo de boas vindas ola tudo bem*/
             .capa h2{
                 margin: 0px; 
+                padding: 0px 70px 0px 70px;
                 color: white;
                 font-family: sans-serif; 
                 font-size: 24px;
                 /* border: 2px solid pink; */
             }
+
+            .container-nome{
+                display: inline-block;
+            }
+            /* .container-logo-xp{
+                display: inline-block;
+                background-image: url('img/logo-xp.png');
+            } */
 
             .corpo-email{
                 /* border: 2px solid red; */
@@ -59,25 +64,36 @@
             }
 
             .footer{
-                padding: 20px 2px;
+                padding: 30px 2px 0px 2px;
                 /* border: 2px solid rgb(0, 110, 255); */
             }
             .footer p{
                 font-family: sans-serif;
             }
 
-            .footer .icons-social{
+            /* .footer .icons-social{
                 width: 40px;
                 height: 40px;
+            } */
+
+            .espaco-icons-social{
+                display: inline-block;
+                max-width:10px;
+                width: 100%;
+            }
+
+            .medalha{
+                width: 59.5px;
+                height: 69.86px;
             }
 
             /* MEDIA QUERIES RESPONSIVE*/
 
             @media (min-width: 0px) and (max-width: 375px) {
-                .capa img{
+                /* .capa img{
                     border: 2px solid red;  
-                    /* max-width: 320px;  */
-                }
+                    /* max-width: 320px;  
+                } */
                 .capa h2{
                     font-size: 18px;
                 }
@@ -87,8 +103,12 @@
                     /* border: 2px solid red; */
                 }
                 .footer .icons-social{
-                    width: 25px;
-                    height: 25px;
+                    width: 50%;
+                    /* border: 2px solid red; */
+                }
+                .espaco-icons-social{
+                    /* border: 1px solid pink; */
+                    display: none;
                 }
                 .contato-bemol h1{
                     font-size: 14px;
@@ -117,14 +137,17 @@
                 .footer{
                     padding: 20px 2px 2px 2px;
                 }
+
+                /* .footer .icons-social{
+                    width: 50%;
+                    border: 2px solid red; 
+                } */
+
                 .paragrafo-email{
                     font-size: 15px;
                     text-align: justify;
                 }
-                .footer .icons-social{
-                    width: 30px;
-                    height: 30px;
-                }
+                
                 .corpo-email{
                     padding: 20px 30px;
                 }
@@ -138,7 +161,6 @@
                     /* border: 2px solid pink; */
                 }
 
-
             }
 
 
@@ -150,13 +172,22 @@
     <body bgcolor="#f5f5f5">
 
         <table border="0" cellpadding="0"
-        cellspacing="0" style="max-width: 700px; width:100%;" align="center">
+        cellspacing="0" style="max-width: 700px; width:100%;" align="center" valign = "middle" class="capa">
 
-            <tr align="center" valign="middle">
-                <td class="capa">
+            <tr align="center" valign="middle" class="container-nome">
+                <td style="display: inline-block;">
+                    <img src="../img/medalha.png" class="medalha">
+                </td>
+                
+                <td style="display: inline-block;">
                     <h2>Olá Daniel, tudo bem?</h2>
                 </td>    
+            
+                <td style="display: inline-block;">
+                    <img src="../img/logo-xp.png">
+                </td>
             </tr>
+
         </table>
 
          <!--*************************INÍCIO DO CORPO DO E-MAIL****************************-->
@@ -192,43 +223,43 @@
 
             <tr valign="middle" align="center">
                 <td style="display: inline-block;" align="center">
-                    <img src="../img/facebook.png" class="icons-social">
+                    <img src="../img/facebook_bemol.png" class="icons-social">
                     <p>facebook</p>
                 </td>
 
-                <td style="display: inline-block; max-width:10px; width: 100%;">
+                <td class="espaco-icons-social">
                         &nbsp;
-                </td> <!--controla o espaçamento entre as imagenss-->
+                </td>  <!--controla o espaçamento entre as imagenss-->
 
                 <td style="display: inline-block;" align="center">
-                        <img src="../img/facebook.png" class="icons-social" >
+                        <img src="../img/twitter_bemol.png" class="icons-social">
                         <p>twitter</p>
                 </td>
 
-                <td style="display: inline-block; max-width:10px; width: 100%;">
+                <td class="espaco-icons-social">
                     &nbsp;
                 </td> <!--controla o espaçamento entre as imagenss-->
 
                 <td style="display: inline-block;" align="center">
-                        <img src="../img/facebook.png" class="icons-social" >
+                        <img src="../img/instagram_bemol.png" class="icons-social" >
                         <p>instagram</p>
                 </td>
 
-                <td style="display: inline-block; max-width:10px; width: 100%;">
+                <td class="espaco-icons-social">
                     &nbsp;
                 </td> <!--controla o espaçamento entre as imagens-->
 
                 <td style="display: inline-block;" align="center">
-                        <img src="../img/facebook.png" class="icons-social" >
+                        <img src="../img/linkedin_bemol.png" class="icons-social" >
                         <p>linkedin</p>
                 </td>
 
-                <td style="display: inline-block; max-width:10px; width: 100%;">
+                <td class="espaco-icons-social">
                     &nbsp;
-                </td> <!--controla o espaçamento entre as imagenss-->
+                </td  <!--controla o espaçamento entre as imagenss-->
 
                 <td style="display: inline-block;" align="center">
-                        <img src="../img/facebook.png" class="icons-social" >
+                        <img src="../img/youtube_bemol.png" class="icons-social" >
                         <p>youtube</p>
                 </td>
             </tr>
