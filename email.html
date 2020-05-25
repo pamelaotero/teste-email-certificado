@@ -65,22 +65,20 @@
 
             .footer{
                 padding: 30px 2px 0px 2px;
-                /* border: 2px solid rgb(0, 110, 255); */
             }
             .footer p{
                 font-family: sans-serif;
-                /* border: 2px solid red; */
                 font-size: 11px;
             }
 
             .footer .icons-social {
-                width: 75%;
+                width: 36.75px;
+                height: 35.25px;
             }
 
             .espaco-icons-social{
                 display: inline-block;
-                max-width: 16px;
-                width: 100%;
+                padding: 16px;
             }
 
             .medalha{
@@ -121,17 +119,19 @@
                     margin-right: 0em;
                 }
                 .footer{
-                    font-size: 10px;
+                    font-size: 8px;
                     padding: 20px 2px 2px 2px;
                     /* border: 2px solid red; */
                 }
+    
                 .footer .icons-social{
-                    width: 50%;
+                    width: 22.05px;
+                    height: 21.14px;
                     /* border: 2px solid red; */
                 }
                 .espaco-icons-social{
-                    /* border: 1px solid pink; */
-                    display: none;
+                    display: inline;
+                    padding: 2px;
                 }
                 .contato-bemol h1{
                     font-size: 14px;
@@ -175,7 +175,11 @@
                     padding: 20px 2px 2px 2px;
                 }
                 .footer .icons-social {
-                    width: 60%;
+                    width: 29.39px;
+                    height: 28.19px;
+                }
+                .footer .espaco-icons-social{
+                    padding: 7px;
                 }
                 .logo-xp{
                     width: 63.69px;
@@ -217,6 +221,21 @@
                 }
             }
 
+            /*fotter alinhado*/
+            @media (min-width: 268px) and (max-width: 300px){
+                .footer .icons-social{
+                    /* bordr: 1px solid red; */
+                    width: 19.59px;
+                    height: 18.78px;
+                }
+                .footer p{
+                    font-size: 8px;
+                }
+                .espaco-icons-social{
+                    display: inline;
+                    padding: 1px;
+                }
+            }
 
         </style>
 
@@ -233,7 +252,8 @@
                 </td>
                 
                 <td style="display: inline-block;">
-                    <h2>Olá Daniel, tudo bem?</h2>
+                    <!-- <h2>Olá Daniel, tudo bem?</h2> -->
+                    <h2>Olá <?= name ?>, tudo bem?</h2>
                 </td>    
             
                 <td style="display: inline-block;">
@@ -326,9 +346,9 @@
                 </td>  <!--controla o espaçamento entre as imagenss-->
 
                 <td style="display: inline-block;" align="center">
-                    <a target="_blank" href="https://youtube.com/lojasbemol" class= "link"></a>
+                    <a target="_blank" href="https://youtube.com/lojasbemol" class= "link">
                         <img src="https://s3-sa-east-1.amazonaws.com/msging.net/iris/Media_9c4a0d14-a557-433b-b273-443d45790d6e" class="icons-social">
-                    </a>
+                    <a>
                     <p>youtube</p>
                 </td>
             </tr>
